@@ -130,7 +130,7 @@ body {
 /* ----------Tablet--------------------- */
 
 
-@media (min-width: 250px){
+@media (min-width: 500px){
     .doporucujeme {
     flex-direction: row;
     flex-wrap:wrap;
