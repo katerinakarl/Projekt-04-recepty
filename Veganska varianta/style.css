@@ -54,23 +54,23 @@ body {
     display:flex;
     flex-direction: column;
     justify-self: center;
+    padding: 10px;
 }
 
 .hlavni-recept {
     align-self: center;
-    align-items: stretch;
-    flex-wrap:nowrap;
-    text-align: justify;
+    min-height: 200px;
     background-image: url('images/salat.jpg');
     color: white;
     background-size: cover;
     text-align: left;
-    flex-basis:content;
+    font-size: 28px;
 }
 
 .recept-recept2 {
     background-image: url('images/chlebicek.jpg');
-    background-size: cover;  
+    background-size: cover; 
+    min-height: 90px; 
     flex-grow: 1;
     flex-shrink: 1;
     border: 1px solid white
@@ -79,6 +79,7 @@ body {
 .recept-recept3 {
     background-image: url('images/cizrna.jpg');
     background-size: cover;
+    min-height: 90px; 
     flex-grow: 1; 
     flex-shrink: 1;
     border: 1px solid white
@@ -87,6 +88,7 @@ body {
 .recept-recept4 {
     background-image: url('images/tacos.jpg');
     background-size: cover;
+    min-height: 90px; 
     flex-grow: 1;
     flex-shrink: 1; 
     border: 1px solid white
@@ -95,6 +97,7 @@ body {
 .recept-recept5 {
     background-image: url('images/burger.jpg');
     background-size: cover;
+    min-height: 90px; 
     flex-grow: 1; 
     flex-shrink: 1;
     border: 1px solid white
@@ -113,11 +116,14 @@ body {
     margin-top: -15px;
     font-size: 14px;
     font-weight: 400px;
+    margin-right: 10px;
 }
 
 .recept-nazev {
     font-family: sans-serif;
     margin-left: 10px;
+    flex-wrap: wrap;
+    font-size: 18px;
 }
 
 
@@ -128,11 +134,32 @@ body {
     .doporucujeme {
     flex-direction: row;
     flex-wrap:wrap;
+    padding: 20px;
         }
+    
+    .recepty {
+    flex-direction: row;
+    }
 
     .hlavni-recept {
-    height: 400px;
-    width:400px;
+    min-height: 250px;
+    font-size: 36px;
+    }
+
+    .recept-recept2 {
+    min-height: 150px;
+    }
+
+    .recept-recept3 {
+    min-height: 150px;
+    }
+    
+    .recept-recept4 {
+    min-height: 150px;
+    }
+
+     .recept-recept5 {
+     min-height: 150px;
     }
     }
         
