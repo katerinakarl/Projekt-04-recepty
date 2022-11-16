@@ -38,3 +38,102 @@ body {
 /* ----- DOLE BUDE TVOJE CSS ----- */
 /* ------------------------------- */
 
+
+.recepty {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-self: center;
+    color: white;
+    justify-content: center;
+    background-size: cover;
+    justify-self: center;
+}
+
+.doporucujeme {
+    display:flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.hlavni-recept {
+    align-self: center;
+    align-items: stretch;
+    flex-wrap:nowrap;
+    text-align: justify;
+    background-image: url('images/salat.jpg');
+    color: white;
+    background-size: cover;
+    text-align: left;
+    flex-basis:content;
+}
+
+.recept-recept2 {
+    background-image: url('images/chlebicek.jpg');
+    background-size: cover;  
+    flex-grow: 1;
+    flex-shrink: 1;
+    border: 1px solid white
+}
+
+.recept-recept3 {
+    background-image: url('images/cizrna.jpg');
+    background-size: cover;
+    flex-grow: 1; 
+    flex-shrink: 1;
+    border: 1px solid white
+}
+
+.recept-recept4 {
+    background-image: url('images/tacos.jpg');
+    background-size: cover;
+    flex-grow: 1;
+    flex-shrink: 1; 
+    border: 1px solid white
+}
+
+.recept-recept5 {
+    background-image: url('images/burger.jpg');
+    background-size: cover;
+    flex-grow: 1; 
+    flex-shrink: 1;
+    border: 1px solid white
+}
+
+.recept-kategorie {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 400px;
+    margin-top: 10px
+}
+
+.recept-komentare {
+    text-align: right;
+    margin-top: -15px;
+    font-size: 14px;
+    font-weight: 400px;
+}
+
+.recept-nazev {
+    font-family: sans-serif;
+    margin-left: 10px;
+}
+
+
+/* ----------Tablet--------------------- */
+
+
+@media (min-width: 250px){
+    .doporucujeme {
+    flex-direction: row;
+    flex-wrap:wrap;
+        }
+
+    .hlavni-recept {
+    height: 400px;
+    width:400px;
+    }
+    }
+        
+
