@@ -45,9 +45,9 @@ body {
     align-items: stretch;
     align-self: center;
     color: white;
-    justify-content: center;
-    background-size: cover;
     justify-self: center;
+    display: block;
+    width: 100%;
 }
 
 .doporucujeme {
@@ -60,6 +60,10 @@ body {
 .hlavni-recept {
     align-self: center;
     min-height: 200px;
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
     background-image: url('images/salat.jpg');
     color: white;
     background-size: cover;
@@ -73,7 +77,7 @@ body {
     min-height: 90px; 
     flex-grow: 1;
     flex-shrink: 1;
-    border: 1px solid white
+    border: 1px solid white;
 }
 
 .recept-recept3 {
@@ -130,37 +134,102 @@ body {
 /* ----------Tablet--------------------- */
 
 
-@media (min-width: 500px){
+@media (min-width: 500px) and (max-width: 1000px){
+
     .doporucujeme {
-    flex-direction: row;
-    flex-wrap:wrap;
-    padding: 20px;
+    margin-top: 0;
+    width: 100%;
+    height: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
     }
     
     .recepty {
+    display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     }
 
     .hlavni-recept {
     min-height: 250px;
     font-size: 36px;
+    display: block;
+    width: 100%;
+    min-height: 250px;
     }
 
     .recept-recept2 {
+    min-height: 150px;
+    flex-basis: 50%;
+    width: 100%;
     min-height: 150px;
     }
 
     .recept-recept3 {
     min-height: 150px;
+    flex-basis: 50%;
+    width: 100%;
+    min-height: 150px;
     }
     
     .recept-recept4 {
     min-height: 150px;
+    flex-basis: 50%;
+    width: 100%;
+    height: auto;
+    min-height: 150px
     }
 
      .recept-recept5 {
-     min-height: 150px;
+    min-height: 150px;
+    flex-basis: 50%;
+    width: 100%;
+    height: auto;
+    min-height: 150px
     }
     }
         
+/* ----------PC--------------------- */
 
+@media (min-width:1000px) and (max-width: 2000px) {
+
+.doporucujeme {
+display: flex;
+flex-direction: row;
+}
+
+.hlavni-recept {
+flex-basis: 50%;
+display: block;
+flex-grow: 1;
+flex-shrink: 1;
+min-height: 400px;
+}
+
+.recepty {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+min-height: 200px;
+}
+
+.recept-recept2 {
+flex-basis: 50%;
+min-height: 200px;
+}
+
+.recept-recept3 {
+flex-basis: 50%;
+min-height: 200px;
+}
+
+.recept-recept4 {
+flex-basis: 50%;
+min-height: 200px;
+}
+
+.recept-recept5 {
+flex-basis: 50%;
+min-height: 200px;
+}
+}
